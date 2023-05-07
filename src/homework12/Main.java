@@ -14,5 +14,7 @@ public class Main {
         warAndPeace.setYear(1968);
         System.out.println(warAndPeace.getYear());
 
+        System.out.println(warAndPeace.getFullname().getFirstName());
+
     }
 }
