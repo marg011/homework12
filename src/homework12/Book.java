@@ -17,9 +17,13 @@ public class Book {
         return this.year;
     }
 
-    public Author getFullname() {return this.author;}
+    public Author getFullName() {return this.author;}
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public String toString(){
+        return "Name of the book : " + this.name + ", publication year: " + this.year + author.toString();
     }
 }

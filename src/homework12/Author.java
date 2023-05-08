@@ -14,4 +14,11 @@ public class Author {
     public String getLastName(){
         return this.lastName;
     }
+
+    public String toString(){
+        return ", First name: " + this.firstName + ", Last name: " + this.lastName;
+    }
+
+
+
 }
