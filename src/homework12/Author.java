@@ -1,5 +1,7 @@
 package homework12;
 
+import java.util.Objects;
+
 public class Author {
     private String firstName;
     private String lastName;
@@ -20,5 +22,12 @@ public class Author {
     }
 
 
+    public boolean equals(Author author) {
+        return getFirstName() == author.getFirstName() && getLastName() == author.getLastName();
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFirstName(), getLastName());
+    }
 }
