@@ -30,8 +30,7 @@ public class Book {
 
 
     public boolean equals(Book book) {
-        return getName() == book.getName() && getYear() == book.getYear();
-        //&& //getFullName().equals(book.getFullName());
+        return getName() == book.getName() && getYear() == book.getYear() && getFullName().equals(book.getFullName());
     }
 
     @Override
