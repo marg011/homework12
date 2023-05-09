@@ -24,12 +24,16 @@ public class Book {
         this.year = year;
     }
 
+    @Override
     public String toString(){
         return "Name of the book : " + this.name + ", publication year: " + this.year + author.toString();
     }
 
 
+
     public boolean equals(Book book) {
+        if (this == book) return true;
+        if (book == null || this.getClass() != book.getClass()) return false;
         return getName() == book.getName() && getYear() == book.getYear() && getFullName().equals(book.getFullName());
     }
 

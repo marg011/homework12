@@ -17,12 +17,16 @@ public class Author {
         return this.lastName;
     }
 
+    @Override
     public String toString(){
         return ", First name: " + this.firstName + ", Last name: " + this.lastName;
     }
 
 
+
     public boolean equals(Author author) {
+        if (this == author) return true;
+        if (author == null || this.getClass() != author.getClass()) return false;
         return getFirstName() == author.getFirstName() && getLastName() == author.getLastName();
     }
 
