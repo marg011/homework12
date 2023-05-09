@@ -30,10 +30,11 @@ public class Book {
     }
 
 
-
-    public boolean equals(Book book) {
-        if (this == book) return true;
-        if (book == null || this.getClass() != book.getClass()) return false;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || this.getClass() != o.getClass()) return false;
+        Book book = (Book) o;
         return getName() == book.getName() && getYear() == book.getYear() && getFullName().equals(book.getFullName());
     }
 
