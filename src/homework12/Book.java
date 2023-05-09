@@ -26,7 +26,7 @@ public class Book {
 
     @Override
     public String toString(){
-        return "Name of the book: " + this.name + ", publication year: " + this.year + author.toString();
+        return "Name of the book : " + this.name + ", publication year: " + this.year + author.toString();
     }
 
 
